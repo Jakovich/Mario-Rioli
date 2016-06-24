@@ -1,0 +1,26 @@
+{
+  "name": "constructor",
+  "version": "0.1.0",
+  "private": true,
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jakovich/constructor.git"
+  },
+
+  "devDependencies": {
+    
+    "browser-sync": "2.11.1",
+    
+    "gulp": "3.9.1"
+  },
+  
+  "engines": {
+    "node": "^5.0.0"
+  },
+  
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "start": "gulp show"
+  }
+}

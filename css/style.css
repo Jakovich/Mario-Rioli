@@ -1,0 +1,87 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.main-hader__phone {
+  font-size: 18px;
+  color: #4e2924;
+}
+
+.main-hader__phone span {
+  font-size: 13px;
+}
+
+.main-hader__link a {
+  margin-top: 10px;
+  color: #502825;
+  font-size: 11px;
+  text-transform: uppercase;
+  border: 2px solid #603913;
+  padding: 8px 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.main-hader__link a:hover {
+  color: #aa3e36;
+  border: 2px solid #aa3e36;
+}
+
+.main-nav {
+  background-color: #bb9e65
+}
+
+.main-menu a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.explic {
+  width: 440px;
+  text-align: center;
+  padding: 18px 24px;
+  border-left: 3px solid #e9d2cb;
+  background-color: #fff7e8;
+  font-size: 12px;
+  font-style: italic;
+  color: #4e2924
+}
+
+.doors-item {
+  text-align: center;
+}
+
+.doors-item__title {
+  color: #502825;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.doors-item__price {
+  padding: 6px 35px;
+  color: #502825;
+  font-size: 13px;
+  text-align: center;
+  border: 2px solid #603913;
+}
+
+.doors-link {
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4f2823;
+  text-transform: uppercase;
+  padding: 10px 45px;
+  
+}
+
+.doors-link:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #6e362f;
+}
+
+
