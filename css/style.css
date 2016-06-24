@@ -28,7 +28,12 @@ body {
 }
 
 .main-nav {
-  background-color: #bb9e65
+  background-color: #bb9e65;
+  min-height: 58px;
+}
+
+.main-nav__inner {
+  position: relative;
 }
 
 .main-nav .icon-bar {
@@ -40,14 +45,16 @@ body {
   padding: 0 40px;
 }
 
-ul.nav {
-  text-align: justify;
+.main-header .navbar {
+  margin-bottom: 0;
   position: relative;
 }
 
-
-
-
+ul.nav {
+  text-align: justify;
+  position: relative;
+  margin-top: 20px;
+}
 
  /*Псевдоэлементы для распределения пунктов меню по ширине*/
 ul.nav:before {
@@ -68,7 +75,7 @@ ul.nav:after {
 
 .nav > li {
   display: inline-block;
-
+  
 }
 
 .nav > li > a {
@@ -79,6 +86,19 @@ ul.nav:after {
   padding: 0;
 }
 
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: transparent;
+  color: #fff7e8;
+}
+
+.navbar-toggle {
+  top: 5px;
+  right: 0;
+  position: absolute;
+  z-index: 50;
+}
+
 .explic {
   width: 440px;
   text-align: center;
@@ -87,7 +107,9 @@ ul.nav:after {
   background-color: #fff7e8;
   font-size: 12px;
   font-style: italic;
-  color: #4e2924
+  color: #4e2924;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .doors-item {
@@ -127,12 +149,28 @@ ul.nav:after {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    min-width: 480px;
+  }
+	
+  .container {
+    max-width: 480px;
+  }
+
   .nav li {
-		display: block;
-		text-align:center;
-		padding-bottom:15px;
-		padding-top:15px;
-	}
+    display: block;
+    text-align:center;
+    padding-bottom:15px;
+    padding-top:15px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width:767px) {
+  .main-menu {
+    padding: 0;
+  }
+	
+	
 }
 
 
