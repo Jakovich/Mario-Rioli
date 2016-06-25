@@ -108,6 +108,7 @@ ul.nav {
 .doors-item__title {
   margin: 0 auto;
   margin-bottom: 15px;
+  line-height: 16px;
   width: 125px;
   color: #502825;
   text-align: center;
