@@ -2,6 +2,10 @@ body {
   font-family: "Arial", sans-serif;
 }
 
+.main-header__contacts {
+  text-align: center;
+  margin-top: 35px;
+}
 .main-header__phone {
   font-size: 18px;
   color: #4e2924;
@@ -9,6 +13,11 @@ body {
 
 .main-header__phone span {
   font-size: 13px;
+}
+
+.main-header__logo img {
+  display: block;
+  margin: 0 auto;
 }
 
 .main-header__link a {
@@ -39,10 +48,6 @@ body {
 .main-nav .icon-bar {
   color: #603913;
   background-color: #603913;
-}
-
-.main-menu {
-  padding: 0 40px;
 }
 
 .main-header .navbar {
@@ -89,15 +94,18 @@ ul.nav {
   font-size: 12px;
   font-style: italic;
   color: #4e2924;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 20px auto;
 }
 
 .doors-item {
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .doors-item__title {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 125px;
   color: #502825;
   text-align: center;
   font-size: 12px;
@@ -105,6 +113,9 @@ ul.nav {
 }
 
 .doors-item__price {
+  width: 125px;
+  margin: 0 auto;
+  margin-top: 20px;
   padding: 6px 35px;
   color: #502825;
   font-size: 13px;
@@ -120,7 +131,10 @@ ul.nav {
   background-color: #4f2823;
   text-transform: uppercase;
   padding: 10px 45px;
-  
+  width: 275px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 .doors-link:hover {
