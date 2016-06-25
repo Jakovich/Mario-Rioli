@@ -6,6 +6,7 @@ body {
   text-align: center;
   margin-top: 35px;
 }
+
 .main-header__phone {
   font-size: 18px;
   color: #4e2924;
@@ -15,9 +16,11 @@ body {
   font-size: 13px;
 }
 
+
+
 .main-header__logo img {
   display: block;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 .main-header__link a {
@@ -161,6 +164,15 @@ ul.nav {
     text-align:center;
     padding-bottom:15px;
     padding-top:15px;
+  }
+  
+  .main-header__contacts {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .main-header__logo img {
+    margin: 0 auto;
   }
 }
 
