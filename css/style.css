@@ -89,7 +89,7 @@ ul.nav {
 }
 
 .explic {
-  width: 440px;
+  max-width: 440px;
   text-align: center;
   padding: 18px 24px;
   border-left: 3px solid #e9d2cb;
@@ -149,7 +149,7 @@ ul.nav {
 
 @media screen and (max-width: 767px) {
   body {
-    min-width: 480px;
+    min-width: 320px;
   }
 	
   .container {
