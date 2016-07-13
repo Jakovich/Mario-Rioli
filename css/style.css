@@ -127,6 +127,22 @@ ul.nav {
   border: 2px solid #603913;
 }
 
+.doors-item__color {
+  margin-top: 15px;
+  background-color: #fff7e8;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0;
+}
+
+.doors-item__color-btn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  margin: 0 4px;
+}
+
 .doors-link {
   font-size: 13px;
   color: #ffffff;
