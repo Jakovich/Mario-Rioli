@@ -100,9 +100,63 @@ ul.nav {
   margin: 20px auto;
 }
 
+.doors-slider {
+  width: 1030px;
+  padding: 0 48px;
+  margin: 0 auto;
+  margin-top: 15px;
+  position: relative;
+}
+
+.doors-slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+.doors-slider::selection { background: transparent; color: #fff; text-shadow: none; }
+
+.doors-items {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.doors-items__wrapper {
+  position: relative;
+  padding: 4px;
+  left: 0;
+  top: 0;
+  width: 10000000px;
+}
+
+.doors-items__wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.doors-slider__nav {
+  position: absolute;
+  width: 31px;
+  height: 55px;
+  background-image: url("../img/icon-arrow.png");
+  top: 140px;
+  
+  cursor: pointer;
+}
+
+.doors-slider__nav--prev {
+  left: 0;
+}
+
+.doors-slider__nav--next {
+  right: 0;
+  transform: rotate(180deg);
+}
+
 .doors-item {
   text-align: center;
   margin-bottom: 25px;
+  float: left;
+  padding-right: 35px;
 }
 
 .doors-item__title {
@@ -193,6 +247,16 @@ ul.nav {
   }
 }
 
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .doors-slider {
+    width: 810px;
+  }
+  
+  .doors-item {
+    padding-right: 20px;
+  }
+}
+
 @media screen and (max-width: 992px) and (min-width: 767px) {
   .main-menu {
     padding: 0;
@@ -201,8 +265,20 @@ ul.nav {
     margin-bottom: 20px;
   }
   
+  .doors-slider {
+    width: 537px;
+  }
+  
+  .doors-item {
+    padding-right: 30px;
+  }
 	
-	
+}
+
+@media screen and (max-width: 766px) {
+  .doors-slider {
+    width: 224px;
+  }
 }
 
 
