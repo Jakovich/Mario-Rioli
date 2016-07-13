@@ -3,7 +3,12 @@ $(document).ready(function() {
     $currentButton = $(this);
     var $currentSrc = $currentButton.attr('data-src');
     var $currentImg = $currentButton.parents('.doors-item').find('img');
-    $currentImg.attr('src', $currentSrc);
+    var imageReplace = new Image();
+    imageReplace.onload = function() {
+      $currentImg.attr('src', $currentSrc);
+    }
+    $currentImg.attr('src', 'img/ajax-loader.gif');
+    imageReplace.src = $currentSrc;
   })
   
 })
