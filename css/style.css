@@ -247,7 +247,7 @@ ul.nav {
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 993px) {
+@media screen and (max-width: 1200px) and (min-width: 992px) {
   .doors-slider {
     width: 810px;
   }
@@ -275,7 +275,7 @@ ul.nav {
 	
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   .doors-slider {
     width: 224px;
   }
