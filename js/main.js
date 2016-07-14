@@ -30,9 +30,22 @@ $(document).ready(function() {
     var slideWidth = $('.doors-item').outerWidth();
   
     var scrollSlider = slideWrap.position().left - slideWidth;
-	 	
- 
+    
     nextLink.click(function(){
+      
+      if(!slideWrap.is(':animated')) {
+        slideWrap
+       .css({'left': scrollSlider})
+       .find('.doors-item:last')
+       .prependTo(slideWrap)
+       .parent()
+       .animate({left: 0}, 500);
+      }
+      
+    });
+  
+    
+    prevLink.click(function(){
       if(!slideWrap.is(':animated')) {
       slideWrap.animate({left: scrollSlider}, 500, function(){
       slideWrap
@@ -42,18 +55,6 @@ $(document).ready(function() {
         .css({'left': 0});
       });
      }
-    });
-  
-    
-    prevLink.click(function(){
-      if(!slideWrap.is(':animated')) {
-        slideWrap
-       .css({'left': scrollSlider})
-       .find('.doors-item:last')
-       .prependTo(slideWrap)
-       .parent()
-       .animate({left: 0}, 500);
-      }
     });
  
   }
